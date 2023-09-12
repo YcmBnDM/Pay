@@ -1,14 +1,16 @@
 package com.example.bean;
 
 import com.alibaba.fastjson.JSONObject;
-import jakarta.annotation.Resource;
-import jakarta.servlet.http.HttpServletRequest;
+import com.example.constants.ApiCodeEnum;
+import com.example.exception.BizException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.stream.Collectors;
