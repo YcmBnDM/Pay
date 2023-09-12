@@ -13,6 +13,11 @@
     <groupId>com.example</groupId>
     <artifactId>Pay</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Pay-Components</module>
+        <module>Pay-Core</module>
+    </modules>
 
     <properties>
         <java.version>17</java.version>
