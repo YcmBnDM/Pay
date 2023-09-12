@@ -18,6 +18,7 @@
         <module>Pay-Components</module>
         <module>Pay-Core</module>
         <module>Pay-Service</module>
+        <module>Pay-Gateway</module>
     </modules>
 
     <properties>
