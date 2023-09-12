@@ -12,6 +12,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
+/**
+ * 实现 Spring Security 的 UserDetails 接口
+ */
 @Data
 @Slf4j
 public class PayUserDetails implements UserDetails {
