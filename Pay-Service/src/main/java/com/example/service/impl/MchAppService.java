@@ -11,6 +11,7 @@ import com.example.entity.PayInterfaceConfig;
 import com.example.entity.PayOrder;
 import com.example.exception.BizException;
 import com.example.service.mapper.MchAppMapper;
+import com.example.util.StringUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,7 +34,7 @@ public class MchAppService extends ServiceImpl<MchAppMapper, MchApp> {
     public void removeByAppId(String appId) {
 
         // 1.查看当前应用是否存在交易数据
-        int payCount = payOrderService.count(PayOrder.gw().eq(PayOrder::getAppId, appId));
+        int payCount = (int) payOrderService.count(PayOrder.gw().eq(PayOrder::getAppId, appId));
         if (payCount > 0) {
             throw new BizException("该应用已存在交易数据，不可删除");
         }
@@ -58,7 +59,7 @@ public class MchAppService extends ServiceImpl<MchAppMapper, MchApp> {
         if (mchApp == null) {
             return null;
         }
-        mchApp.setAppSecret(StringKit.str2Star(mchApp.getAppSecret(), 6, 6, 6));
+        mchApp.setAppSecret(StringUtil.str2Star(mchApp.getAppSecret(), 6, 6, 6));
 
         return mchApp;
     }
@@ -82,7 +83,7 @@ public class MchAppService extends ServiceImpl<MchAppMapper, MchApp> {
 
         IPage<MchApp> pages = this.page(iPage, wrapper);
 
-        pages.getRecords().stream().forEach(item -> item.setAppSecret(StringKit.str2Star(item.getAppSecret(), 6, 6, 6)));
+        pages.getRecords().stream().forEach(item -> item.setAppSecret(StringUtil.str2Star(item.getAppSecret(), 6, 6, 6)));
 
         return pages;
     }

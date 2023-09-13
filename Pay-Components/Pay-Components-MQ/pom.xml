@@ -29,6 +29,7 @@
         <dependency>
             <groupId>org.messaginghub</groupId>
             <artifactId>pooled-jms</artifactId>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 

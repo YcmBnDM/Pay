@@ -74,7 +74,7 @@ public class AmountUtil {
      * @param cent
      * @return
      */
-    public static String convertCent2Dollar(Long cent) {
+    public static String convertCentToDollar(Long cent) {
         if (cent == null) {
             return "";
         }

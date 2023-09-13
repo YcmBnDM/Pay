@@ -18,12 +18,12 @@
         <module>Pay-Components</module>
         <module>Pay-Core</module>
         <module>Pay-Service</module>
-        <module>Pay-Gateway</module>
+        <module>Pay-Payment</module>
     </modules>
 
     <properties>
         <java.version>8</java.version>
-        <fastjson.version>2.0.22</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
 
@@ -67,7 +67,7 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
-                <version>6.1.0</version>
+                <version>5.4.7</version>
             </dependency>
 
             <dependency>
@@ -91,7 +91,7 @@
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>3.5.3.1</version>
+                <version>3.4.2</version>
             </dependency>
 
 
@@ -156,6 +156,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
             <optional>true</optional>
             <scope>provided</scope> <!-- 编译阶段生效，不需要打入包中 -->
         </dependency>
@@ -166,6 +167,19 @@
             <version>5.8.20</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.google.cloud.tools</groupId>
+                    <artifactId>jib-maven-plugin</artifactId>
+                    <version>3.2.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 
 
 </project>
