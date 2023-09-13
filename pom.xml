@@ -20,6 +20,7 @@
         <module>Pay-Service</module>
         <module>Pay-Payment</module>
         <module>Pay-Manager</module>
+        <module>Pay-Merchant</module>
     </modules>
 
     <properties>
