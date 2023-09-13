@@ -76,11 +76,11 @@
             <artifactId>swagger-annotations</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>5.1.1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.rocketmq</groupId>-->
+<!--            <artifactId>rocketmq-client</artifactId>-->
+<!--            <version>5.1.1</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.apache.rocketmq</groupId>

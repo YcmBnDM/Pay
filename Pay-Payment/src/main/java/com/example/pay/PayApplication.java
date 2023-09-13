@@ -27,8 +27,8 @@ import java.util.Arrays;
 
 @SpringBootApplication
 @EnableScheduling
-@MapperScan("com.jeequan.jeepay.service.mapper")    //Mybatis mapper接口路径
-@ComponentScan(basePackages = "com.jeequan.jeepay.*")   //由于MainApplication没有在项目根目录， 需要配置basePackages属性使得成功扫描所有Spring组件；
+@MapperScan("com.example.service.mapper")    //Mybatis mapper接口路径
+@ComponentScan(basePackages = "com.example.*")   //由于MainApplication没有在项目根目录， 需要配置basePackages属性使得成功扫描所有Spring组件；
 @Configuration
 public class PayApplication {
 
