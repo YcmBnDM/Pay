@@ -57,7 +57,7 @@ rocketmq:
 
 logging:
     level:
-        root: ERROR
+        root: INFO
         org:
             springframework: ERROR
     path: ./logs  #日志存放地址

@@ -28,7 +28,7 @@ public class TokenService {
      * 删除Token
      * @param iToken
      */
-    public static void removeToken(String iToken) {
+    public static void removeToken(String iToken,  Long currentUID) {
         RedisUtil.del(iToken);
     }
 

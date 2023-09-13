@@ -19,6 +19,7 @@
         <module>Pay-Core</module>
         <module>Pay-Service</module>
         <module>Pay-Payment</module>
+        <module>Pay-Manager</module>
     </modules>
 
     <properties>
